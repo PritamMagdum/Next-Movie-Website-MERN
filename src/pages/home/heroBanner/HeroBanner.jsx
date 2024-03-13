@@ -28,6 +28,15 @@ const HeroBanner = () => {
     }
   };
 
+  const handleQueryClick = () => {
+    if (query.length <= 0) {
+      alert("Please Enter Something Before Click on Search Button");
+    } else {
+      console.log(query);
+      navigate(`/search/${query}`);
+    }
+  };
+
   return (
     <div className="heroBanner">
       {!loading && (
@@ -51,7 +60,7 @@ const HeroBanner = () => {
               onChange={(e) => setQuery(e.target.value)}
               onKeyUp={searchQueryHandler}
             />
-            <button>Search</button>
+            <button onClick={handleQueryClick}>Search</button>
           </div>
         </div>
       </ContentWrapper>
