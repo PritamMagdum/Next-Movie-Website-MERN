@@ -3,11 +3,10 @@ import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
 import { useNavigate, useLocation, Link } from "react-router-dom";
-
+import logo from "../../../public/logo.png";
 import "./Header.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/movix-logo.svg";
 
 const Header = () => {
   const [show, setShow] = useState("top");
@@ -82,6 +81,9 @@ const Header = () => {
           </li>
           <li className="menuItem" onClick={() => navigationHandler("tv")}>
             TV Shows
+          </li>
+          <li className="menuItem" onClick={() => navigate("/about")}>
+            About
           </li>
           <li className="menuItem">
             <HiOutlineSearch onClick={openSearch} />
