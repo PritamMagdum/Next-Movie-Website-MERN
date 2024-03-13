@@ -41,7 +41,7 @@ const About = () => {
                       >
                         Pritam Magdum
                       </a>
-                      , the visionary founder of Next Movie, is not only a
+                      , the visionary founder of "Next Movie", is not only a
                       passionate cinephile but also a software developer. With
                       years of experience in the tech industry, Pritam's
                       expertise in programming languages, web development

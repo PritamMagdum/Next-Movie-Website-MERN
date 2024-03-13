@@ -25,8 +25,13 @@ const Footer = () => {
           >
             About
           </Link>
-
-          <li className="menuItem">Blog</li>
+          <Link
+            to="/contact"
+            className="menuItem"
+            style={{ textDecoration: "none" }}
+          >
+            Contact
+          </Link>
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">

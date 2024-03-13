@@ -3,7 +3,6 @@ import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
 import { useNavigate, useLocation, Link } from "react-router-dom";
-import logo from "../../../public/logo.png";
 import "./Header.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
@@ -73,7 +72,7 @@ const Header = () => {
     <div className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
         <Link to="/" className="logo">
-          <img src={logo} alt="NextMovie" />
+          <img src="/logo.png" alt="NextMovie" />
         </Link>
         <ul className="menuItems">
           <li className="menuItem" onClick={() => navigationHandler("movie")}>
@@ -84,6 +83,9 @@ const Header = () => {
           </li>
           <li className="menuItem" onClick={() => navigate("/about")}>
             About
+          </li>
+          <li className="menuItem" onClick={() => navigate("/contact")}>
+            Contact
           </li>
           <li className="menuItem">
             <HiOutlineSearch onClick={openSearch} />
