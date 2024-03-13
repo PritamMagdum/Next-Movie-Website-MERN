@@ -22,6 +22,7 @@
     }
     .menuItem {
       transition: all ease 0.3s;
+      color: white;
       cursor: pointer;
       font-size: 12px;
       @include md {
@@ -53,6 +54,7 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
+      color: white;
       background-color: var(--black);
       display: flex;
       align-items: center;
@@ -62,6 +64,26 @@
       &:hover {
         box-shadow: 0 0 0.625em var(--pink);
         color: var(--pink);
+      }
+    }
+  }
+  .developer-section {
+    margin-top: 25px;
+    transition: all ease 0.3s;
+    color: white;
+    cursor: pointer;
+
+    .developer {
+      color: black;
+      font-size: smaller;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 8px;
+      background-color: white;
+      &:hover {
+        background-color: rgb(92, 92, 92);
+        color: white;
       }
     }
   }
