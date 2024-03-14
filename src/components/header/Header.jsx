@@ -68,6 +68,17 @@ const Header = () => {
     setMobileMenu(false);
   };
 
+  const staticNavigationHandler = (path) => {
+    if (path === "home") {
+      navigate("/");
+    } else if (path === "about") {
+      navigate("/about");
+    } else {
+      navigate("/contact");
+    }
+    setMobileMenu(false);
+  };
+
   return (
     <div className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
@@ -75,16 +86,28 @@ const Header = () => {
           <img src="/logo.png" alt="NextMovie" />
         </Link>
         <ul className="menuItems">
+          <li
+            className="menuItem"
+            onClick={() => staticNavigationHandler("home")}
+          >
+            Home
+          </li>
           <li className="menuItem" onClick={() => navigationHandler("movie")}>
             Movies
           </li>
           <li className="menuItem" onClick={() => navigationHandler("tv")}>
             TV Shows
           </li>
-          <li className="menuItem" onClick={() => navigate("/about")}>
+          <li
+            className="menuItem"
+            onClick={() => staticNavigationHandler("about")}
+          >
             About
           </li>
-          <li className="menuItem" onClick={() => navigate("/contact")}>
+          <li
+            className="menuItem"
+            onClick={() => staticNavigationHandler("contact")}
+          >
             Contact
           </li>
           <li className="menuItem">

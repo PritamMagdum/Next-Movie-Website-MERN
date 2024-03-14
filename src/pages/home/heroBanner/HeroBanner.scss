@@ -52,6 +52,7 @@
     margin-bottom: 10px;
     .title {
       font-size: 50px;
+      opacity: 0.9;
       font-weight: 700;
       @include md {
         margin-bottom: 0;

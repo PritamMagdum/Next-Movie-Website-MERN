@@ -28,7 +28,7 @@ const Contact = () => {
                 <div className="right">
                   <div className="title">Next Movie</div>
                   <div className="subtitle">
-                    The Best Online Movie Streaming Platform
+                    The Best Online Movies and TV Shows Streaming Platform
                   </div>
 
                   <div className="overview">
