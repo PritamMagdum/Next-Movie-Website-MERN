@@ -57,13 +57,13 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/:mediaType/:id" element={<Details />} />
-          <Route path="/search/:query" element={<SearchResult />} />
-          <Route path="/explore/:mediaType" element={<Explore />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/:mediaType/:id" element={<Details />} />
+          <Route exact path="/search/:query" element={<SearchResult />} />
+          <Route exact path="/explore/:mediaType" element={<Explore />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>
