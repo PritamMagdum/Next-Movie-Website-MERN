@@ -23,7 +23,7 @@ const About = () => {
             <ContentWrapper>
               <div className="content">
                 <div className="left">
-                  <Img className="posterImg" src="/Pritam.png" />
+                  <Img className="posterImg" src="/Pritam.jpg" />
                 </div>
                 <div className="right">
                   <div className="title">Pritam Magdum</div>

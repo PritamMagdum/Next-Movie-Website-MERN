@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaLinkedin,
+  FaGithub,
 } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
@@ -48,26 +49,34 @@ const Footer = () => {
         <div className="socialIcons">
           <a
             href="https://www.linkedin.com/in/pritam-magdum-63b242221/"
-            target="_"
+            target="_blank"
           >
             <span className="icon">
               <FaLinkedin />
             </span>
           </a>
+          <a href="https://github.com/PritamMagdum" target="_blank">
+            <span className="icon">
+              <FaGithub />
+            </span>
+          </a>
 
-          <a href="https://twitter.com/pritam1622" target="_">
+          <a href="https://twitter.com/pritam1622" target="_blank">
             <span className="icon">
               <FaTwitter />
             </span>
           </a>
 
-          <a href="https://www.instagram.com/pritam_magdum_72_12/" target="_">
+          <a
+            href="https://www.instagram.com/pritam_magdum_72_12/"
+            target="_blank"
+          >
             <span className="icon">
               <FaInstagram />
             </span>
           </a>
 
-          <a href="https://www.facebook.com/pritam.magdumpm" target="_">
+          <a href="https://www.facebook.com/pritam.magdumpm" target="_blank">
             <span className="icon">
               <FaFacebookF />
             </span>
@@ -77,7 +86,7 @@ const Footer = () => {
           Developer -{" "}
           <a
             href="https://www.linkedin.com/in/pritam-magdum-63b242221/"
-            target="_"
+            target="_blank"
             className="developer"
           >
             Pritam Magdum
