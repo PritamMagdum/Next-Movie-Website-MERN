@@ -17,7 +17,7 @@ const About = () => {
         <>
           <React.Fragment>
             <div className="backdrop-img">
-              <Img src="/Pritam.png" />
+              <Img src="/Pritam.jpg" />
             </div>
             <div className="opacity-layer"></div>
             <ContentWrapper>
